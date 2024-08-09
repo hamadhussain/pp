@@ -72,7 +72,7 @@ const data = [
   },
 ];
 
-const page = () => {
+const Page = () => {
   return (
     <div className=" flex flex-col justify-center items-center overflow-hidden home min-h-screen ">
       {/* <div className=" absolute z-30 w-72 h-96">
@@ -94,4 +94,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const page = ({children}) => {
+const Page = ({children}) => {
     const audio = new Audio("/audio/birds39-forest-20772.mp3");
     audio.loop = true;
     audio.play();
@@ -11,4 +11,4 @@ const page = ({children}) => {
   )
 }
 
-export default page
+export default Page
