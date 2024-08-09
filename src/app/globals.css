@@ -335,9 +335,34 @@ backdrop-filter: blur(24px);
   }
 }
 
+.pro{
+  backdrop-filter: blur(3px);
+  /* border: 2px solid rgb(238, 255, 4); */
+  
+  box-shadow: 0px 0px 2px 0px rgb(221 237 0);
+}
+:hover.pro{
+  box-shadow: 
+  2px 2px 8px 0px rgb(221 237 0);
+  cursor: pointer;
+  transition: all 10ms ease-in;
+}
 
+.homee{
+  backdrop-filter: blur(3px);  
+  box-shadow: 0px 0px 2px 0px rgb(221 237 0);
+  /* width: 60px; */
+  /* height: 60px; */
+  border-radius: 105px;
 
-/* Individual orbit items */
+}
+
+.homee:hover{
+  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
+  cursor: pointer;
+  transition: all 10ms ease-in;
+}
+
 .orbit-item {
   position: absolute;
   width: 60px;
@@ -347,12 +372,18 @@ backdrop-filter: blur(24px);
   align-items: center;
   border-radius: 105px;
   color: white;
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(4px);
   cursor: pointer;
   animation: orbit 18s linear infinite;
   animation-play-state: running; /* Default animation state */
-}
+  box-shadow: 0px 0px 2px 0px rgb(221 237 0);
 
+}
+.orbit-item:hover{
+  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
+  cursor: pointer;
+  transition: all 10ms ease-in;
+}
 /* Hover state */
 /* .orbit-container:hover ~ .orbit-item {
   animation-play-state: paused;

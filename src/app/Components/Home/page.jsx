@@ -47,7 +47,7 @@ const data = [
   {
     id: 6,
     name: "Github",
-    link: "https://| github.com/hamadhussain",
+    link: "https://github.com/hamadhussain",
     Icon: FiGithub,
   },
   {
@@ -75,17 +75,17 @@ const data = [
 const Page = () => {
   return (
     <div className=" flex flex-col justify-center items-center overflow-hidden home min-h-screen ">
-      {/* <div className=" absolute z-30 w-72 h-96">
+      <div className=" absolute  h- z-30  ">
         <Render>
           <Wizard />
         </Render>
-      </div> */}
+      </div>
       {data.map((i) => ( 
         <div key={i.id} className=" flex justify-between items-center  gap-8  ">
-          <div className="orbit-item " id={`item${i.id}`}>
-            <Link href={i.link} target="_blank">
+          <div className="orbit-item hover:border-2 border-red-300" id={`item${i.id}`}>
+            <Link href={i.link} >
               {" "}
-              <i.Icon className=" text-4xl " />
+              <i.Icon className=" text-3xl " />
             </Link>
           </div>
         </div>
