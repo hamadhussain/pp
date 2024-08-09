@@ -81,7 +81,7 @@ const Page = () => {
         </Render>
       </div> */}
       {data.map((i) => ( 
-        <div className=" flex justify-between items-center  gap-8  ">
+        <div key={i.id} className=" flex justify-between items-center  gap-8  ">
           <div className="orbit-item " id={`item${i.id}`}>
             <Link href={i.link} target="_blank">
               {" "}
