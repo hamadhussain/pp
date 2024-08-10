@@ -1,24 +1,13 @@
 import React from "react";
 import Data from "../../Utils/project_data";
-import { IoHomeOutline } from "react-icons/io5";
-import Link from "next/link";
 import StuffRender from "./StuffRender/page";
+import NavigationOtherPages from "./../NavigationOtherPages/page";
+import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className=" project flex flex-col text-white overflow-hidden justify- items-center  h-full">
-      <div className="flex w-screen justify-between px-28">
-        <div className=" relative top-10 homee p-3">
-          <Link href="/">
-            <IoHomeOutline className="  text-3xl" />
-          </Link>
-        </div>
-        <div className=" relative top-10 homee p-3">
-          <Link href="/">
-            <IoHomeOutline className="  text-3xl" />
-          </Link>
-        </div>
-      </div>
+    <div className=" project drop-shadow-2 flex flex-col text-white overflow-hidden justify- items-center  h-screen">
+      <NavigationOtherPages />
       <div className="relative top-28 right-0 w-screen flex justify-between items-start">
         <div className=" ">
           <StuffRender />

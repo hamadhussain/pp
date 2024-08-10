@@ -12,9 +12,14 @@ const RenderModel = ({ children, className }) => {
       dpr={[10, 20]}
       // camera={{ position: [-0.5, 1, 2] }}
     >
+      <directionalLight
+        position={[7.3, 4, 5.4]}
+        castShadow
+        intensity={Math.PI * 2}
+      />
       {/* <ambientLight position={[[10, 10, 30]]} /> */}
       <Suspense fallback={null}>{children}</Suspense>
-      <Environment preset="city" />
+      <Environment preset="forest" />
     </Canvas>
   );
 };

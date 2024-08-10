@@ -75,17 +75,17 @@ const data = [
 const Page = () => {
   return (
     <div className=" flex flex-col justify-center items-center overflow-hidden home min-h-screen ">
-      <div className=" absolute  h- z-30  ">
-        <Render>
+      <div className=" absolute w-96 h-[600px] my-5 py-6 h- z-30  ">
+         <Render>
           <Wizard />
-        </Render>
+        </Render> 
       </div>
       {data.map((i) => ( 
-        <div key={i.id} className=" flex justify-between items-center  gap-8  ">
+        <div key={i.id} className=" flex  justify-between items-center relative -left-8 gap-8  ">
           <div className="orbit-item hover:border-2 border-red-300" id={`item${i.id}`}>
             <Link href={i.link} >
               {" "}
-              <i.Icon className=" text-3xl " />
+              <i.Icon className=" text-3xl" />
             </Link>
           </div>
         </div>

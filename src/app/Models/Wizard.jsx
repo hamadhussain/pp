@@ -23,7 +23,7 @@ const Wizard = React.memo(function Wizard(props) {
       dispose={null}
       ref={modelRef}
       position={[0, -1.5, 0]}
-      scale={[0.07, 0.07, 0.07]}
+      scale={[.07, .07, .07]}
       rotation={[0.25, 0, 0]}
     >
       <mesh
