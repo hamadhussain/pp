@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React,{ useState } from "react";
 import Wizard from "../../Models/Wizard";
 import Render from "../../Render/page";
 import { IoHomeOutline } from "react-icons/io5";
@@ -10,7 +10,7 @@ import { FaPalette } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaBookBookmark } from "react-icons/fa6";
-
+import Particles from './../../Particles/page'
 import Link from "next/link";
 
 const data = [
@@ -73,12 +73,15 @@ const data = [
 ];
 
 const Page = () => {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
   return (
     <div className=" flex flex-col justify-center items-center overflow-hidden home min-h-screen ">
+      <Particles/>
       <div className=" absolute w-96 h-[600px] my-5 py-6 h- z-30  ">
-         <Render>
+         {/* <Render>
           <Wizard />
-        </Render> 
+        </Render>  */}
       </div>
       {data.map((i) => ( 
         <div key={i.id} className=" flex  justify-between items-center relative -left-8 gap-8  ">
@@ -90,6 +93,7 @@ const Page = () => {
           </div>
         </div>
       ))}
+
     </div>
   );
 };

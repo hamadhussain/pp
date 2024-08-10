@@ -367,3 +367,27 @@ body {
     transform: rotate(360deg) translateX(250px) rotate(-360deg); /* Adjusted value */
   }
 }
+
+.orbit-item {
+  position: absolute;
+  width: 60px; /* Adjusted size */
+  height: 60px; /* Adjusted size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Ensure circle shape */
+  color: white;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  animation: orbit 18s linear infinite;
+  animation-play-state: running; /* Ensure animation is running by default */
+  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
+  transition: all 10ms ease-in;
+}
+
+.orbit-item:hover {
+  box-shadow: 0px 0px 7px 3px rgb(221 237 0);
+  cursor: pointer;
+  animation-play-state: running; /* Ensure animation is running on hover */
+}
+
