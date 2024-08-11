@@ -281,7 +281,8 @@ const Page = () => {
       </div>
 
       <div className="grid-container p-5 sm:p-10 gap-4 sm:gap-10">
-        <div className="item1 rounded-lg pro backdrop-blur-3xl p-4">
+        <div className="item1 rounded-lg pro backdrop-blur-3xl p-14">
+          <div className="p-4">
           <h1 className="text-xl sm:text-3xl wh">Architect of Enchantment</h1>
           <p className="mt-4 text-sm sm:text-base">
             My journey in web development is powered by an array of mystical
@@ -294,6 +295,7 @@ const Page = () => {
             but visually captivating. Join me as I continue to explore new
             spells and technologies to shape the future of the web.
           </p>
+          </div>
         </div>
 
         <div className="item2 flex flex-col justify-center items-center rounded-lg pro backdrop-blur-3xl p-4">
@@ -312,7 +314,8 @@ const Page = () => {
         </div>
 
         <div className="item3 rounded-lg pro backdrop-blur-3xl p-4 text-white">
-          <h2 className="text-xl sm:text-2xl font-bold wh mb-4">
+<div className="p-4">
+<h2 className="text-xl sm:text-2xl font-bold wh mb-4">
             Next.js Web Application
           </h2>
           <p className="text-sm sm:text-base mb-4">
@@ -325,9 +328,9 @@ const Page = () => {
             <span className="font-semibold">Technologies Used:</span> Next.js,
             Tailwind CSS, React, Node.js
           </p>
+</div>
         </div>
-
-        <div className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col text-yellow-300 wh sm:block hidden justify-around">
+        <div className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col text-yellow-300 wh  justify-around">
           <div className="p-5 text-5xl">
             25+ <sub className=" text-white text-3xl">clients</sub>
           </div>
@@ -335,6 +338,15 @@ const Page = () => {
             1+ <sub className=" text-white text-3xl">years of experience</sub>
           </div>
         </div>
+        {/* <div className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col items- h-fit text-yellow-300 wh sm:block hidden justify-center">
+          <div className="p-5 text-5xl">
+            25+ <sub className=" text-white text-3xl">clients</sub>
+          </div>
+          <div className="p-5 text-4xl">
+            1+ <sub className=" text-white text-3xl">years of experience</sub>
+          </div>
+          <div className="border-2 w-24"></div>
+        </div> */}
         {/* <div className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col items-center md:block hidden text-yellow-300 wh justify-around p-4">
           <div className="text-3xl sm:text-5xl">
             25+ <sub className="text-white text-xl sm:text-3xl">clients</sub>
