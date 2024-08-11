@@ -1,5 +1,6 @@
 import React from "react";
 import NavigationOtherPages from "./../NavigationOtherPages/page";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -26,6 +27,7 @@ const Page = () => {
               placeholder="name"
               className="pro rounded-lg p-2 w-[400px] bg-transparent    focus:border-none   "
               id=""
+              required='true'
             />
             <input
               type="text"
@@ -33,6 +35,7 @@ const Page = () => {
               placeholder="email"
               className="pro rounded-lg p-2 w-[400px] bg-transparent    focus:border-none   "
               id=""
+              required='true'
             />
             <input
               type="text"
@@ -40,10 +43,13 @@ const Page = () => {
               placeholder="message"
               className="pro rounded-lg p-2 w-[400px] bg-transparent    focus:border-none   "
               id=""
+              required='true'
             />
-            <button className=" bg-black p-3 rounded-lg pro w-[200px] transition-all ease-in-out duration-500 hover:scale-105 hover:duration-300">
-              Cast Your Message!
-            </button>
+            <Link href="whatsapp:contact=03462351008@s.whatsapp.com&message='sdasda'">
+              <button className=" bg-black p-3 rounded-lg pro w-[200px] transition-all ease-in-out duration-500 hover:scale-105 hover:duration-300">
+                Cast Your Message!
+              </button>
+            </Link>
           </form>
         </div>
       </div>

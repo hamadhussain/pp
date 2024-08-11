@@ -34,11 +34,11 @@ const App = () => {
                         interactivity: {
                             events: {
                                 onClick: {
-                                    enable: true,
+                                    enable: false,
                                     mode: "push",
                                 },
                                 onHover: {
-                                    enable: true,
+                                    enable: false,
                                     mode: "repulse",
                                 },
                                 resize: true,
@@ -55,7 +55,7 @@ const App = () => {
                         },
                         particles: {
                             color: {
-                                value: "#FFD700",  
+                                value: "#FFFF00",  
                             },
                             links: {
                                 color: "#FFD700",  

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -66,7 +66,7 @@
   body {
     @apply bg-background text-foreground;
   }
-} */
+}
 
 body {
   margin: 0;
@@ -74,225 +74,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
-.orbit-item {
-  position: absolute;
-  /* border-radius: 100%; */
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: 2px solid red; */
-  border-radius: 105px;
-  /* background-color: white; */
-  color: white;
-  backdrop-filter: blur(24px);
-  /* filter: blur(23px); */
-}
-
-#item1 {
-  animation: orbit 14s linear infinite;
-}
-
-#item2 {
-  animation: orbit 14s linear infinite;
-  animation-delay: 2s;
-}
-
-#item3 {
-  animation: orbit 14s linear infinite;
-  animation-delay: 4s;
-}
-
-#item4 {
-  animation: orbit 14s linear infinite;
-  animation-delay: 6s;
-}
-
-#item5 {
-  animation: orbit 14s linear infinite;
-  animation-delay: 8s;
-}
-
-#item6 {
-  animation: orbit 14s linear infinite;
-  animation-delay: 10s;
-}
-
-#item7 {
-  animation: orbit 14s linear infinite;
-  animation-delay: 12s;
-}
-
-@keyframes orbit {
-  from {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
-    border-color: 2px solid red;
-  }
-  to {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
-    border-color: 2px solid red;
-  }
-}
-
-.project {
-  background-image: url("/background/projects-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.orbit-item {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 105px;
-  color: white;
-  backdrop-filter: blur(24px);
-  cursor: pointer;
-  animation-play-state: running; /* Default animation state */
-}
-
-#item1 {
-  animation: orbit 18s linear infinite;
-}
-
-#item2 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 2s;
-}
-
-#item3 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 4s;
-}
-
-#item4 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 6s;
-}
-
-#item5 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 8s;
-}
-
-#item6 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 10s;
-}
-
-#item7 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 12s;
-}
-
-#item8 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 14s;
-}
-
-#item9 {
-  animation: orbit 18s linear infinite;
-  animation-delay: 16s;
-}
-
-@keyframes orbit {
-  from {
-    transform: rotate(0deg) translateX(220px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(220px) rotate(-360deg);
-  }
-}
-
-.pro {
-  backdrop-filter: blur(3px);
-  /* border: 2px solid rgb(238, 255, 4); */
-
-  box-shadow: 0px 0px 6px 0px rgb(221 237 0);
-}
-:hover.pro {
-  box-shadow: 0px 0px 6px 3px rgb(221 237 0);
-
-  cursor: pointer;
-  transition: all 10ms ease-in;
-}
-
-.homee {
-  backdrop-filter: blur(3px);
-  box-shadow: 0px 0px 6px 0px rgb(221 237 0);
-  border-radius: 105px;
-}
-
-.homee:hover {
-  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
-  cursor: pointer;
-  transition: all 10ms ease-in;
-}
-
-.orbit-item {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 105px;
-  color: white;
-  backdrop-filter: blur(4px);
-  cursor: pointer;
-  animation: orbit 18s linear infinite;
-  animation-play-state: running; /* Default animation state */
-  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
-}
-.orbit-item:hover {
-  box-shadow: 0px 0px 7px 3px rgb(221 237 0);
-  cursor: pointer;
-  transition: all 10ms ease-in;
-}
-#item1 {
-  animation-delay: 0s;
-}
-#item2 {
-  animation-delay: 2s;
-}
-#item3 {
-  animation-delay: 4s;
-}
-#item4 {
-  animation-delay: 6s;
-}
-#item5 {
-  animation-delay: 8s;
-}
-#item6 {
-  animation-delay: 10s;
-}
-#item7 {
-  animation-delay: 12s;
-}
-#item8 {
-  animation-delay: 14s;
-}
-#item9 {
-  animation-delay: 16s;
-}
-
-/* Keyframes for orbit animation */
-@keyframes orbit {
-  from {
-    transform: rotate(0deg) translateX(220px) rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg) translateX(220px) rotate(-360deg);
-  }
-}
-
 .home {
   background-image: url("/background/home-background.png");
   background-size: cover;
@@ -336,58 +117,197 @@ body {
   background-image: url("/background/contact-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
 }
 .wh {
   text-shadow: 4px -1px 7px yellow;
   color: yellow;
 }
-
-
-.orbit-item {
-  position: absolute;
-  width: 60px; /* Bigger size */
-  height: 60px; /* Bigger size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%; /* Maintain circle shape */
-  color: white;
-  backdrop-filter: blur(4px);
-  cursor: pointer;
-  animation: orbit 18s linear infinite;
-  animation-play-state: running; /* Default animation state */
-  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
-}
-@keyframes orbit {
-  from {
-    transform: rotate(0deg) translateX(250px) rotate(0deg); /* Adjusted value */
-  }
-  to {
-    transform: rotate(360deg) translateX(250px) rotate(-360deg); /* Adjusted value */
-  }
+.about {
+  background-image: url("/background/about-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.orbit-item {
-  position: absolute;
-  width: 60px; /* Adjusted size */
-  height: 60px; /* Adjusted size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%; /* Ensure circle shape */
-  color: white;
-  backdrop-filter: blur(4px);
+.pro {
+  backdrop-filter: blur(3px);
+  /* border: 2px solid rgb(238, 255, 4); */
+
+  box-shadow: 0px 0px 6px 0px rgb(221 237 0);
+}
+:hover.pro {
+  box-shadow: 0px 0px 6px 3px rgb(221 237 0);
+
   cursor: pointer;
-  animation: orbit 18s linear infinite;
-  animation-play-state: running; /* Ensure animation is running by default */
-  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
   transition: all 10ms ease-in;
 }
 
-.orbit-item:hover {
-  box-shadow: 0px 0px 7px 3px rgb(221 237 0);
-  cursor: pointer;
-  animation-play-state: running; /* Ensure animation is running on hover */
+.homee {
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 0px 6px 0px rgb(221 237 0);
+  border-radius: 105px;
 }
 
+.homee:hover {
+  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
+  cursor: pointer;
+  transition: all 10ms ease-in;
+}
+
+.project {
+  background-image: url("/background/projects-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.orbit-item {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  animation: orbit 1s linear infinite;
+  animation-play-state: running;
+  box-shadow: 0px 0px 7px 0px rgb(221 237 0);
+  transition: all 1ms ease-in;
+  animation: orbit 18s linear infinite;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(250px) rotate(-360deg);
+  }
+}
+
+#item2 {
+  animation-delay: 2s;
+}
+
+#item3 {
+  animation-delay: 4s;
+}
+
+#item4 {
+  animation-delay: 6s;
+}
+
+#item5 {
+  animation-delay: 8s;
+}
+
+#item6 {
+  animation-delay: 10s;
+}
+
+#item7 {
+  animation-delay: 12s;
+}
+
+#item8 {
+  animation-delay: 14s;
+}
+
+#item9 {
+  animation-delay: 16s;
+}
+
+.containn:hover .orbit-item {
+  animation-play-state: paused;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header right right"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Base styles */
+.home, .contact, .about, .project {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Home section overlay */
+.home::before, .project::before, .contact::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.44);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home, .contact, .about, .project {
+    background-position: center;
+  }
+
+  .homee {
+    width: 90vw; /* Adjust width for smaller screens */
+    height: auto;
+  }
+
+  .orbit-item {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "header header header"
+      "menu main main"
+      "footer footer footer";
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+}

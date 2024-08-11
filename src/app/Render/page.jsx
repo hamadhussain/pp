@@ -9,7 +9,7 @@ const RenderModel = ({ children, className }) => {
     <Canvas
       // className={("-z-10 relative", className)}
       shadows={false}
-      dpr={[10, 20]}
+      dpr={[1.7, 1.7]}
       // camera={{ position: [-0.5, 1, 2] }}
     >
       <directionalLight
@@ -19,7 +19,7 @@ const RenderModel = ({ children, className }) => {
       />
       {/* <ambientLight position={[[10, 10, 30]]} /> */}
       <Suspense fallback={null}>{children}</Suspense>
-      <Environment preset="forest" />
+      <Environment preset="dawn" />
     </Canvas>
   );
 };
