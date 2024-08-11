@@ -330,7 +330,7 @@ const Page = () => {
           </p>
 </div>
         </div>
-        <div className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col text-yellow-300 wh  justify-around">
+        <div className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col text-yellow-300 wh sm:block hidden justify-around">
           <div className="p-5 text-5xl">
             25+ <sub className=" text-white text-3xl">clients</sub>
           </div>
