@@ -5,7 +5,7 @@ import Audio from '../Audio/page'
 
 const Page = () => {
   return (
-    <div className="flex relative top-6 justify-between items-center   w-[1200px]">
+    <div className="flex relative top-6 justify-between items-center  w-screen px-10">
       <div className="  flex justify-s items-center pro rounded-full h-fit p-3">
         <Link href="/">
           <IoHomeOutline className="  text-3xl" />

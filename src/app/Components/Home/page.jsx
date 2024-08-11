@@ -54,7 +54,7 @@ const data = [
   {
     id: 7,
     name: "Twitter",
-    link: "https://github.com",
+    link: "https://Twitter.com",
     Icon: FaTwitter,
   },
   {
