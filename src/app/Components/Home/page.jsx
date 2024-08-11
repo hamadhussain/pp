@@ -125,7 +125,7 @@ const Page = () => {
             <Wizard />
           </Render>
         </div>
-        <div className="flex justify-center items-center relative -left-8 z-20">
+        <div className="flex justify-center items-center relative -left-6 z-20">
           {data.map((i) => (
             <div
               key={i.id}
