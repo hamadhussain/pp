@@ -74,9 +74,9 @@ const Page = () => {
 
   return (
     <>
-      <div className="h-screen overflow-hidden contact text-white flex flex-col justify-start items-center space-y-6 px-4 sm:px-8 md:px-16 lg:px-24">
+      <div className="h-screen min-h-full overflow-hidden contact text-white flex flex-col justify-start items-center space-y-6 px-4 sm:px-8 md:px-16 lg:px-24">
         <NavigationOtherPages />
-        <div className="flex flex-col items-center space-y-6 pt-16">
+        <div className="flex flex-col h-full items-center space-y-6 pt-16">
           <h1 className="text-4xl sm:text-5xl md:text-6xl wh animate-pulse">
             Summon The Wizard
           </h1>
