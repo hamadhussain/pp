@@ -50,13 +50,13 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="project drop-shadow-2 flex flex-col text-white overflow-hidden justify-center items-center h-full md:h-screen p-4 sm:p-6 lg:p-8">
+    <div className="project drop-shadow-2 flex flex-col space-y-9 text-white overflow-hidden justify-center items-center h-full sm:h-screen  p-4 sm:p-6 lg:p-8">
       <NavigationOtherPages />
-      <div className="relative top-28 w-full flex flex-col lg:flex-row lg:justify-between lg:items-start h-screen">
+      <div className="relative sm:top-28 w-full flex flex-col lg:flex-row lg:justify-between lg:items-start h-full sm:h-screen">
         <div className="hidden lg:block lg:w-1/4">
           <StuffRender />
         </div>
-        <div className="space-y-8 lg:space-y-4 lg:w-3/4 lg:pl-8">
+        <div className="space-y-8 lg:space-y-14 lg:w-3/4 lg:pl-8 h-full">
           {Data.map((i) => (
             <div key={i.id}>
               <Link href={i.link}>

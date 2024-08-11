@@ -109,8 +109,8 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center home min-h-screen overflow-hidden">
-      <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5">
+    <div className="flex flex-col justify-center space-y-16 items-center home min-h-screen overflow-hidden">
+      <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5 sm:right-0 right-72 ">
         <div className="pro rounded-full h-fit p-3" onClick={hover}>
           {hoveredItem ? (
             <GiSoundOn className="text-3xl" />
@@ -125,7 +125,7 @@ const Page = () => {
             <Wizard />
           </Render>
         </div>
-        <div className="flex justify-center items-center z-20">
+        <div className="flex justify-center items-center relative -left-8 z-20">
           {data.map((i) => (
             <div
               key={i.id}

@@ -132,13 +132,10 @@ body {
 
 .pro {
   backdrop-filter: blur(3px);
-  /* border: 2px solid rgb(238, 255, 4); */
-
   box-shadow: 0px 0px 6px 0px rgb(221 237 0);
 }
 :hover.pro {
   box-shadow: 0px 0px 6px 3px rgb(221 237 0);
-
   cursor: pointer;
   transition: all 10ms ease-in;
 }
@@ -254,16 +251,6 @@ body {
   padding: 20px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
 .home, .contact, .about, .project {
   background-size: cover;
   background-repeat: no-repeat;
@@ -295,7 +282,6 @@ body {
     }
   }
 
-
   .homee {
     width: 90vw; 
     height: auto;
@@ -313,8 +299,6 @@ body {
       "menu main main"
       "footer footer footer";
   }
-
-  
 }
 
 

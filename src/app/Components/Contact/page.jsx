@@ -77,7 +77,7 @@ const Page = () => {
       <div className="sm:h-screen min-h-full overflow-hidden contact text-white flex flex-col justify-start items-center space-y-6 px-4 sm:px-8 md:px-16 lg:px-24">
         <NavigationOtherPages />
         <div className="flex flex-col h-full items-center space-y-6 pt-16">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl wh animate-pulse">
+          <h1 className="text-2xl sm:text-3xl md:text-6xl wh animate-pulse">
             Summon The Wizard
           </h1>
           <p className="text-center text-sm sm:text-base md:text-lg lg:text-xl w-full max-w-4xl text-slate-200">
