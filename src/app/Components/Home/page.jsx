@@ -119,8 +119,8 @@ const Page = () => {
           )}
         </div>
       </div>
-      <div className="containn w-[80vw] h-[80vh] flex z-20 justify-center items-center">
-        <div className="absolute w-[80vw] h-[80vh] z-10">
+      <div className="containn w-[50vw] h-[50vh] flex z-20 justify-center items-center">
+        <div className="absolute w-[70vw] h-[70vh] z-10">
           <Render>
             <Wizard />
           </Render>
