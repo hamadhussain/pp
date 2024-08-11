@@ -113,9 +113,9 @@ const Page = () => {
       <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5">
         <div className="pro rounded-full h-fit p-3" onClick={hover}>
           {hoveredItem ? (
-            <GiSoundOff className="text-3xl" />
-          ) : (
             <GiSoundOn className="text-3xl" />
+          ) : (
+            <GiSoundOff className="text-3xl" />
           )}
         </div>
       </div>
