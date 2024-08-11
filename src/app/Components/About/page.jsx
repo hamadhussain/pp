@@ -3,7 +3,7 @@ import Render from "../../Render/page";
 import Hat from "../../Models/HatModel";
 import Progess from "./Progess/page";
 import Image from "next/image";
-import Audio from './../NavigationOtherPages/page'
+import Audio from "./../NavigationOtherPages/page";
 const Page = () => {
   const Data = [
     {
@@ -86,7 +86,8 @@ const Page = () => {
   return (
     <>
       <div className="bg-fixed about text-white">
-        <div className="h-screen flex flex-col  justify-center items-center">    <Audio/>
+        <div className="h-screen flex flex-col  justify-center items-center">
+          <Audio/>
 
           <div className=" w-[600px] h-[600px] flex justify-center item-center relative z-10">
             <Render>

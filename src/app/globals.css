@@ -265,14 +265,12 @@ body {
 
 
 
-/* Base styles */
 .home, .contact, .about, .project {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* Home section overlay */
 .home::before, .project::before, .contact::before {
   content: "";
   position: absolute;
@@ -283,21 +281,31 @@ body {
   left: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .home, .contact, .about, .project {
     background-position: center;
   }
 
+
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+  }
+
+
   .homee {
-    width: 90vw; /* Adjust width for smaller screens */
+    width: 90vw; 
     height: auto;
   }
 
   .orbit-item {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem; /* Adjust font size */
+    width: 30px;
+    height: 30px;
+
   }
 
   .grid-container {

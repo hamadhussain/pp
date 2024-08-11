@@ -101,7 +101,7 @@ const Page = () => {
     //     <div className=" absolute w-[600px] h-[600px]  z-10  ">
     //       <Render>
     //       <Wizard />
-    //     </Render> 
+    //     </Render>
     //     </div>
     //     <div className="  flex justify-center items-center z-20">
     //       {data.map((i) => (
@@ -122,37 +122,37 @@ const Page = () => {
     // </div>
 
     <div className="flex flex-col justify-center items-center home min-h-screen overflow-hidden">
-    <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5">
-      <div className="pro rounded-full h-fit p-3" onClick={hover}>
-        {hoveredItem ? (
-          <GiSoundOff className="text-3xl" />
-        ) : (
-          <GiSoundOn className="text-3xl" />
-        )}
+      <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5">
+        <div className="pro rounded-full h-fit p-3" onClick={hover}>
+          {hoveredItem ? (
+            <GiSoundOff className="text-3xl" />
+          ) : (
+            <GiSoundOn className="text-3xl" />
+          )}
+        </div>
       </div>
-    </div>
-    <div className="containn w-[80vw] h-[80vh] flex z-20 justify-center items-center">
-      <div className="absolute w-[80vw] h-[80vh] z-10">
-        <Render>
-          <Wizard />
-        </Render>
-      </div>
-      <div className="flex justify-center items-center z-20">
-        {data.map((i) => (
-          <div
-            key={i.id}
-            className="flex justify-between items-center relative gap-4 md:gap-8"
-          >
-            <div className="orbit-item pro" id={`item${i.id}`}>
-              <Link href={i.link}>
-                <i.Icon className="text-2xl md:text-3xl cursor-pointer" />
-              </Link>
+      <div className="containn w-[80vw] h-[80vh] flex z-20 justify-center items-center">
+        <div className="absolute w-[80vw] h-[80vh] z-10">
+          <Render>
+            <Wizard />
+          </Render>
+        </div>
+        <div className="flex justify-center items-center z-20">
+          {data.map((i) => (
+            <div
+              key={i.id}
+              className="flex justify-between items-center relative gap-4 md:gap-8"
+            >
+              <div className="orbit-item pro" id={`item${i.id}`}>
+                <Link href={i.link}>
+                  <i.Icon className="text-xl  md:text-3xl cursor-pointer" />
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
