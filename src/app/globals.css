@@ -269,7 +269,7 @@ body {
 
 @media (max-width: 768px) {
   .home, .contact, .about, .project {
-    background-position: center;
+    /* background-position: center; */
   }
 
 

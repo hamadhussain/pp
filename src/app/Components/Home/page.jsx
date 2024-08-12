@@ -103,7 +103,7 @@ const Page = () => {
 
   return (
     <div className="flex flex-col justify-center space-y-16 items-center home min-h-screen overflow-hidden">
-      <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5 ">
+      <div className="flex text-white w-screen justify-end px-6 md:px-28 absolute top-5 ">
         <div className="pro rounded-full h-fit p-2" onClick={hover}>
           {hoveredItem ? (
             <GiSoundOn className="sm:text-3xl text-2xl" />
