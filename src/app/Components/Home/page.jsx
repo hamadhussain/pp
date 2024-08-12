@@ -62,7 +62,8 @@ const data = [
     name: "Gmail",
     link: "https://mail.google.com/mail/u/0/?hl=en-GB#inbox",
     Icon: BiLogoGmail,
-  }, {
+  },
+  {
     id: 9,
     name: "Facebook",
     link: "https://facebook.com",
@@ -71,25 +72,12 @@ const data = [
 ];
 
 const Page = () => {
-  // const [hoveredItem, setHoveredItem] = useState(true);
-  // const audioRef = useRef(new Audio("/audio/birds39-forest-20772.mp3"));
-  // const hover = () => {
-  //   if (hoveredItem == false) {
-  //     audioRef.current.pause();
-  //   } else {
-  //     audioRef.current.loop = true;
-  //     audioRef.current.play();
-  //   }
-  //   setHoveredItem(!hoveredItem);
-  // };
-
   const [hoveredItem, setHoveredItem] = useState(false); // Initialize as false
   const audioRef = useRef(null);
 
   useEffect(() => {
     audioRef.current = new Audio("/audio/birds39-forest-20772.mp3");
 
-    // Cleanup on component unmount
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
@@ -107,7 +95,6 @@ const Page = () => {
     }
     setHoveredItem(!hoveredItem);
   };
-
   return (
     <div className="flex flex-col justify-center space-y-16 items-center home min-h-screen overflow-hidden">
       <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5 ">
@@ -131,11 +118,11 @@ const Page = () => {
               key={i.id}
               className="flex justify-between items-center relative gap-4 md:gap-8"
             >
-              <div className="orbit-item pro" id={`item${i.id}`}>
-                <Link href={i.link}>
+              <Link href={i.link}>
+                <div className="orbit-item pro" id={`item${i.id}`}>
                   <i.Icon className="text-xl  md:text-3xl cursor-pointer" />
-                </Link>
-              </div>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

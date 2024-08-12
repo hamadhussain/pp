@@ -281,24 +281,25 @@ const Page = () => {
       </div>
 
       <div className="grid-container p-5 sm:p-10 gap-4 sm:gap-10">
-        <div className="item1 rounded-lg pro backdrop-blur-3xl p-14">
+        <div data-aos="zoom-in-up"  className="item1 rounded-lg pro backdrop-blur-3xl p-14">
           <div className="p-4">
-          <h1 className="text-xl sm:text-3xl wh">Architect of Enchantment</h1>
-          <p className="mt-4 text-sm sm:text-base">
-            My journey in web development is powered by an array of mystical
-            tools and languages, with JavaScript casting the core of my
-            enchantments. I wield frameworks like React.js and Next.js with
-            precision, crafting seamless portals (websites) that connect realms
-            (users) across the digital universe. The ancient arts of the
-            Jamstack empower me to create fast, secure, and dynamic experiences,
-            while my design skills ensure every creation is not only functional
-            but visually captivating. Join me as I continue to explore new
-            spells and technologies to shape the future of the web.
-          </p>
+            <h1 className="text-xl sm:text-3xl wh">Architect of Enchantment</h1>
+            <p className="mt-4 text-sm sm:text-base">
+              My journey in web development is powered by an array of mystical
+              tools and languages, with JavaScript casting the core of my
+              enchantments. I wield frameworks like React.js and Next.js with
+              precision, crafting seamless portals (websites) that connect
+              realms (users) across the digital universe. The ancient arts of
+              the Jamstack empower me to create fast, secure, and dynamic
+              experiences, while my design skills ensure every creation is not
+              only functional but visually captivating. Join me as I continue to
+              explore new spells and technologies to shape the future of the
+              web.
+            </p>
           </div>
         </div>
 
-        <div className="item2 flex flex-col justify-center items-center rounded-lg pro backdrop-blur-3xl p-4">
+        <div data-aos="zoom-in-up"  className="item2 flex flex-col justify-center items-center rounded-lg pro backdrop-blur-3xl p-4">
           <h1 className="capitalize text-lg sm:text-2xl p-2 sm:p-5 wh">
             Most Used Languages
           </h1>
@@ -313,24 +314,24 @@ const Page = () => {
           ))}
         </div>
 
-        <div className="item3 rounded-lg pro backdrop-blur-3xl p-4 text-white">
-<div className="p-4">
-<h2 className="text-xl sm:text-2xl font-bold wh mb-4">
-            Next.js Web Application
-          </h2>
-          <p className="text-sm sm:text-base mb-4">
-            Developed a dynamic and responsive web application using Next.js,
-            showcasing a strong command of server-side rendering and static site
-            generation. The application features seamless navigation and
-            improved performance with optimized loading times.
-          </p>
-          <p className="text-sm sm:text-base">
-            <span className="font-semibold">Technologies Used:</span> Next.js,
-            Tailwind CSS, React, Node.js
-          </p>
-</div>
+        <div data-aos="zoom-in-up"  className="item3 rounded-lg pro backdrop-blur-3xl p-4 text-white">
+          <div className="p-4">
+            <h2 className="text-xl sm:text-2xl font-bold wh mb-4">
+              Next.js Web Application
+            </h2>
+            <p className="text-sm sm:text-base mb-4">
+              Developed a dynamic and responsive web application using Next.js,
+              showcasing a strong command of server-side rendering and static
+              site generation. The application features seamless navigation and
+              improved performance with optimized loading times.
+            </p>
+            <p className="text-sm sm:text-base">
+              <span className="font-semibold">Technologies Used:</span> Next.js,
+              Tailwind CSS, React, Node.js
+            </p>
+          </div>
         </div>
-        <div className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col text-yellow-300 wh sm:block hidden justify-around">
+        <div data-aos="zoom-in-up"  className="item4 rounded-lg pro backdrop-blur-3xl flex flex-col text-yellow-300 wh sm:block hidden justify-around">
           <div className="p-5 text-5xl">
             25+ <sub className=" text-white text-3xl">clients</sub>
           </div>
@@ -357,7 +358,7 @@ const Page = () => {
           </div>
         </div> */}
 
-        <div className="item5 rounded-lg pro grid grid-cols-3 sm:grid-cols-6 backdrop-blur-3xl p-4">
+        <div data-aos="zoom-in-up"  className="item5 rounded-lg pro grid grid-cols-3 sm:grid-cols-6 backdrop-blur-3xl p-4">
           {skills.map((i) => (
             <div
               key={i.id}
