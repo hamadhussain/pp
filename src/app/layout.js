@@ -1,9 +1,16 @@
-import { Inter } from "next/font/google";
+import { Inter ,Roboto_Mono,Pacifico} from "next/font/google";
 import "./globals.css";
 import Particles from "../app/Particles/page";
 import ScrollLayout from './ScrollLayout/page'
 
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Pacifico({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
 
 export const metadata = {
   title: "Hammad-three-portfolio",
@@ -13,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <ScrollLayout>{children}</ScrollLayout>
       <Particles/>
       </body>

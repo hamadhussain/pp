@@ -13,67 +13,71 @@ import { MdFacebook } from "react-icons/md";
 import Link from "next/link";
 import { GiSoundOn } from "react-icons/gi";
 import { GiSoundOff } from "react-icons/gi";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const data = [
-  {
-    id: 1,
-    name: "Home",
-    link: "/",
-    Icon: IoHomeOutline,
-  },
-  {
-    id: 2,
-    name: "About",
-    link: "/Components/About",
-    Icon: IoPersonOutline,
-  },
-  {
-    id: 3,
-    name: "Projects",
-    link: "/Components/Projects",
-    Icon: FaPalette,
-  },
-  {
-    id: 4,
-    name: "LinkedIn",
-    link: "https://linkedin.com/in/hammadhussaindeveloper ",
-    Icon: FaLinkedinIn,
-  },
-  {
-    id: 5,
-    name: "Contact",
-    link: "/Components/Contact",
-    Icon: FaPhoneAlt,
-  },
-  {
-    id: 6,
-    name: "Github",
-    link: "https://github.com/hamadhussain",
-    Icon: FiGithub,
-  },
-  {
-    id: 7,
-    name: "Twitter",
-    link: "https://Twitter.com",
-    Icon: FaTwitter,
-  },
-  {
-    id: 8,
-    name: "Gmail",
-    link: "https://mail.google.com/mail/u/0/?hl=en-GB#inbox",
-    Icon: BiLogoGmail,
-  },
-  {
-    id: 9,
-    name: "Facebook",
-    link: "https://facebook.com",
-    Icon: MdFacebook,
-  },
-];
+
 
 const Page = () => {
-  const [hoveredItem, setHoveredItem] = useState(false); // Initialize as false
+  const data = [
+    {
+      id: 1,
+      name: "Home",
+      link: "/",
+      Icon: IoHomeOutline,
+    },
+    {
+      id: 2,
+      name: "About",
+      link: "/Components/About",
+      Icon: IoPersonOutline,
+    },
+    {
+      id: 3,
+      name: "Projects",
+      link: "/Components/Projects",
+      Icon: FaPalette,
+    },
+    {
+      id: 4,
+      name: "LinkedIn",
+      link: "https://linkedin.com/in/hammadhussaindeveloper ",
+      Icon: FaLinkedinIn,
+    },
+    {
+      id: 5,
+      name: "Contact",
+      link: "/Components/Contact",
+      Icon: FaPhoneAlt,
+    },
+    {
+      id: 6,
+      name: "Github",
+      link: "https://github.com/hamadhussain",
+      Icon: FiGithub,
+    },
+    {
+      id: 7,
+      name: "Twitter",
+      link: "https://Twitter.com",
+      Icon: FaTwitter,
+    },
+    {
+      id: 8,
+      name: "Gmail",
+      link: "https://mail.google.com/mail/u/0/?hl=en-GB#inbox",
+      Icon: BiLogoGmail,
+    },
+    {
+      id: 9,
+      name: "Facebook",
+      link: "https://facebook.com",
+      Icon: MdFacebook,
+    },
+  ];
+  const [hoveredItem, setHoveredItem] = useState(false);  
   const audioRef = useRef(null);
+  const [item, setItem] = useState(data.name);  
 
   useEffect(() => {
     audioRef.current = new Audio("/audio/birds39-forest-20772.mp3");
@@ -95,6 +99,8 @@ const Page = () => {
     }
     setHoveredItem(!hoveredItem);
   };
+  const notify = () => toast(item);
+
   return (
     <div className="flex flex-col justify-center space-y-16 items-center home min-h-screen overflow-hidden">
       <div className="flex text-white lg:w-screen justify-end px-6 md:px-28 absolute top-5 ">
@@ -119,7 +125,7 @@ const Page = () => {
               className="flex justify-between items-center relative gap-4 md:gap-8"
             >
               <Link href={i.link}>
-                <div className="orbit-item pro" id={`item${i.id}`}>
+                <div onClick={notify} className="orbit-item pro" id={`item${i.id}`}>
                   <i.Icon className="text-xl  md:text-3xl cursor-pointer" />
                 </div>
               </Link>
@@ -127,6 +133,7 @@ const Page = () => {
           ))}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
